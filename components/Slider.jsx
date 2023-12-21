@@ -13,10 +13,10 @@ import { FiSettings } from "react-icons/fi";
 const Slider = ({ children }) => {
   return (
     <div className="flex">
-      <div className="fixed w-20 h-screen p-4 bg-white border-r-[1px] flex flex-col justify-between">
+      <div className="fixed w-20 h-screen p-4 bg-[#f0f4f2] border-r-[1px] flex flex-col justify-between">
         <div className="flex flex-col items-center gap-2">
           <Link href="/">
-            <div className="text-white bg-pink-600 p-2 rounded-lg inline-block">
+            <div className="text-white bg-[#00DC82] p-2 rounded-lg inline-block">
               <RxSketchLogo size={20} />
             </div>
           </Link>

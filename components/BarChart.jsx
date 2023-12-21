@@ -31,22 +31,24 @@ const BarChart = () => {
       labels: ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"],
       datasets: [
         {
-          label: "Sales",
+          label: 'จำนวนปัญหา',
           data: [18127, 22201, 19490, 17938, 24182, 17842, 22475],
-          borderColor: "rgb(0,0,0)",
-          backgroundColor: "rgb(219,39,119)",
+          backgroundColor: "#00DC82",
+          color: "#fff",
         },
       ],
     });
 
     setChartOptions({
-      plugin: {
-        legend: {
-          position: "top",
-        },
+      data: chartData,
+      plugins: {
         title: {
           display: true,
-          text: "Daily sales",
+          text: "Report of week",
+          font: {
+            size: 25,
+          },
+          color : "black"
         },
         maintainAspectRatio: false,
         responsive: true,
@@ -55,8 +57,8 @@ const BarChart = () => {
   }, []);
 
   return (
-    <div className="w-full md:col-span-2 relative lg:h-[78vh] h-[58vh] m-auto p-4 border rounded-lg bg-white">
-      <Bar data={chartData} options={chartOptions} />
+    <div className="w-full md:col-span-2 relative lg:h-[78vh] h-[58vh] m-auto p-4 border rounded-lg bg-[#f0f4f2]">
+      <Bar data={chartData} options={chartOptions}/>
     </div>
   );
 };

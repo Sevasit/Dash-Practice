@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gray-100 min-h-screen">
+      <main className=" bg-[#e5e5e5] min-h-screen">
         <Header title1="Dashboard" title2="Welcome back, Client" />
         <TopCard />
         <div className="p-4 grid grid-cols-1 md:grid-cols-3 gap-4">

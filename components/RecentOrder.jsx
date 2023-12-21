@@ -4,7 +4,7 @@ import { FiShoppingBag } from "react-icons/fi";
 
 const RecentOrder = () => {
   return (
-    <div className="w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-scroll">
+    <div className="w-full mt-[-1px] col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-scroll">
       <h1>Recent Orders</h1>
       <ul>
         {data.map((order, id) => (
@@ -12,7 +12,7 @@ const RecentOrder = () => {
             key={id}
             className="bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 flex items-center cursor-pointer"
           >
-            <div className="bg-pink-100 rounded-lg p-2 text-pink-600">
+            <div className=" rounded-lg p-2 text-[#00DC82]">
               <FiShoppingBag />
             </div>
             <div className="pl-4">
